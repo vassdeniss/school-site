@@ -47,6 +47,19 @@ body, html {
     text-align: center;
 }
 
+.bg-text3 {
+    background-color: white;
+    color: black;
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0%;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    padding: 20px;
+    text-align: center;
+}
+
 .nav {
     filter: blur(0px);
     -webkit-filter: blur(0px);
