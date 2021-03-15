@@ -1,0 +1,61 @@
+body {
+    background-image: url("background.jpg");
+    backdrop-filter: blur(8px);
+    height: 100%;
+    font-size: 35px;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+  
+.bg-image {
+    background-image: url("background.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.bg-text {
+    background-color: white;
+    color: black;
+    position: absolute;
+    display: block;
+    top: 30%;
+    width: 100%;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-text2 {
+    background-color: white;
+    color: black;
+    position: absolute;
+    display: block;
+    width: 100%;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.index {
+    color: white;
+}
+
+.index2 {
+    color: black;
+}
