@@ -1,27 +1,22 @@
 body {
     background-image: url("background.jpg");
     backdrop-filter: blur(8px);
-    height: 100%;
     font-size: 35px;
-    background-position: relative;
+    background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-body, html {
-    height: 100%;
+    resize: both;
 }
 
 .bg-text {
     background-color: white;
     color: black;
-    position: fixed;
-    bottom: 55%;
+    position: relative;
     width: 100%;
     filter: blur(0px);
     -webkit-filter: blur(0px);
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 .index {
@@ -33,7 +28,20 @@ body, html {
 }
 
 #foot {
-    position: fixed;
-    bottom: 0; 
     width: 100%;
+    position: relative;
+    margin-top: 200px;
+}
+
+.nav {
+    color: black;
+    transition: 0.5s;
+}
+
+.nav:hover {
+    color: white;
+}
+
+.modal-open {
+    overflow: scroll;
 }

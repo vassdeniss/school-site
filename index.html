@@ -13,7 +13,7 @@
     </head>
     <body>
         <div>
-        <nav class="navbar navbar-expand-lg bg-warning navbar-light fixed-top">
+        <nav style="margin-bottom: 100px;" class="navbar navbar-expand-lg bg-warning navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#target" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,10 +23,20 @@
                         <a onmouseout="colorNormal()" onmouseover="colorChange()" class="nav-link" href="index.html"> <span class="index">in</span><span class="index2">Side</span><span class="index">Sense</span> </a>
                     </li>
                 </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav" href="#about"> What We Do </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav" href="#album"> Picture Album </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         </div>
-        <div class="bg-text">
+        <div id="about" class="bg-text" style="margin-top: 100px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12"><h1> What We Do </h1></div>
@@ -43,31 +53,50 @@
                 </div>
             </div>
         </div>
+        <div id="album" class="bg-text" style="margin-top: 100px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="img-fluid"> 
+                        <img onclick="openModalOne()" style="cursor: pointer;" id="one" onmouseover="resize()" onmouseout="resizeNormal()" src="one.jpg" width="250px"> 
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="foot">
         <footer style="background-color: rgb(32, 31, 31);">
             <div class="container-fluid">
-                <div style="color:white;" class="row"> 
+                <div style="color:white; padding: 20px;" class="row"> 
                     <div class="col-xl-4 col-lg-4 col-md-4"> Information </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> Contact Us </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> Services </div>
                 </div>
-                <div style="color:white; font-size: 20px;" class="row"> 
+                <div style="color:white; font-size: 20px; padding: 5px;" class="row"> 
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 1 </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 1 </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 1 </div>
                 </div>
-                <div style="color:white; font-size: 20px;" class="row"> 
+                <div style="color:white; font-size: 20px; padding: 5px;" class="row"> 
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 2 </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 2 </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 2 </div>
                 </div>
-                <div style="color:white; font-size: 20px;" class="row"> 
+                <div style="color:white; font-size: 20px; padding: 5px;" class="row"> 
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 3 </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 3 </div>
                     <div class="col-xl-4 col-lg-4 col-md-4"> - Option 3 </div>
                 </div>
             </div>
         </footer>
+        </div>
+
+        <div class="modal fade" id="oneImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="one.jpg" style="width: 465px; height: 600px;">
+                </div>
+              </div>
+            </div>
         </div>
     </body>
 </html>
