@@ -1,5 +1,5 @@
 body {
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     backdrop-filter: blur(8px);
     font-size: 35px;
     background-position: absolute;
@@ -33,15 +33,83 @@ body {
     margin-top: 200px;
 }
 
-.nav {
+.navColor {
     color: black;
     transition: 0.5s;
 }
 
-.nav:hover {
+.navColor:hover {
     color: white;
 }
 
 .modal-open {
     overflow: scroll;
+}
+
+@media (min-width: 992px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+  
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+  
+@-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+}
+  
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #C89600;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
 }

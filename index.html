@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="code.js"></script>
+        <link rel="shortcut icon" type="images/png" href="images/logo.png"> 
         <title> inSideSense </title>
     </head>
     <body>
@@ -25,12 +27,34 @@
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav" href="#about"> What We Do </a>
+                        <a class="nav-link" href="#about"><span class="navColor"> What We Do </span></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav" href="#album"> Picture Album </a>
+                        <a class="nav-link" href="#album"><span class="navColor"> Picture Album </span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#customers"><span class="navColor"> Customers Opinion </span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot"><span class="navColor"> Bottom of Page </span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="navColor"> Account </span>
+                      </a>
+                      <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                        <a style="color: black;" class="dropdown-item" href="#"> Sign Up </a>
+                        <div class="dropdown-divider"></div>
+                        <a style="color: black;" class="dropdown-item" href="#"> Log In </a>
+                      </div>
                     </li>
                 </ul>
             </div>
@@ -47,9 +71,15 @@
                     <div class="col-xl-4 col-lg-4 col-md-4"><h2> Product Design </h2></div>
                 </div>
                 <div class="row">
-                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> Lorem ipsum dolor sit amet sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus. Eros in cursus. Ut enim ad minim veniam. </div>
-                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> Massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim convallis aenean et tortor at risus. Eros in cursus turpis massa tincidunt dui ut ornare. </div>
-                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> Massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim convallis aenean et tortor at risus. Eros in cursus. Ut enim ad minim veniam. Turpis massa tincidunt dui ut ornare. </div>
+                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> 
+                        Lorem ipsum dolor sit amet sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus. Eros in cursus. Ut enim ad minim veniam. 
+                    </div>
+                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> 
+                        Massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim convallis aenean et tortor at risus. Eros in cursus turpis massa tincidunt dui ut ornare. 
+                    </div>
+                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> 
+                        Massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim convallis aenean et tortor at risus. Eros in cursus. Ut enim ad minim veniam. Turpis massa tincidunt dui ut ornare. 
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,46 +87,174 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="img-fluid"> 
-                        <img onclick="openModalOne()" style="cursor: pointer;" id="one" onmouseover="resize()" onmouseout="resizeNormal()" src="one.jpg" width="250px"> 
+                        <img onclick="openModalOne()" style="cursor: pointer;" id="one" onmouseover="resizeOne()" onmouseout="resizeNormalOne()" src="images/one.jpg" width="260px" height="376px"> 
+                    </div>
+                    <div class="img-fluid"> 
+                        <img onclick="openModalTwo()" style="cursor: pointer;" id="two" onmouseover="resizeTwo()" onmouseout="resizeNormalTwo()" src="images/two.jpg" width="260px" height="376px"> 
+                    </div>
+                    <div class="img-fluid"> 
+                        <img onclick="openModalThree()" style="cursor: pointer;" id="three" onmouseover="resizeThree()" onmouseout="resizeNormalThree()" src="images/three.jpg" width="260px" height="376px"> 
+                    </div>
+                    <div class="img-fluid"> 
+                        <img width="260px" height="376px" onclick="openModalFour()" style="cursor: pointer;" id="four" onmouseover="resizeFour()" onmouseout="resizeNormalFour()" src="images/four.jpg"> 
+                    </div>
+                    <div class="img-fluid"> 
+                        <img width="260px" height="376px" onclick="openModalFive()" style="cursor: pointer;" id="five" onmouseover="resizeFive()" onmouseout="resizeNormalFive()" src="images/five.jpg"> 
+                    </div>
+                    <div class="img-fluid"> 
+                        <img width="270px" height="376px" onclick="openModalSix()" style="cursor: pointer;" id="six" onmouseover="resizeSix()" onmouseout="resizeNormalSix()" src="images/six.jpg"> 
+                    </div>
+                    <div class="img-fluid"> 
+                        <img width="270px" height="376px" onclick="openModalSeven()" style="cursor: pointer;" id="seven" onmouseover="resizeSeven()" onmouseout="resizeNormalSeven()" src="images/seven.jpg"> 
                     </div>
                 </div>
             </div>
         </div>
-        <div id="foot">
-        <footer style="background-color: rgb(32, 31, 31);">
+        <div id="customers" class="bg-text" style="margin-top: 100px;">
             <div class="container-fluid">
-                <div style="color:white; padding: 20px;" class="row"> 
-                    <div class="col-xl-4 col-lg-4 col-md-4"> Information </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> Contact Us </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> Services </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12"><h1> Our Customers Are Satisifed </h1></div>
                 </div>
-                <div style="color:white; font-size: 20px; padding: 5px;" class="row"> 
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 1 </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 1 </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 1 </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4"><h2><q><i>Quality Work and Ideas</i></q></h2></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4"><h2><q><i>Perfection in Site Design</i></q></h2></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4"><h2><q><i>Amazing Customer Support</i></q></h2></div>
                 </div>
-                <div style="color:white; font-size: 20px; padding: 5px;" class="row"> 
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 2 </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 2 </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 2 </div>
-                </div>
-                <div style="color:white; font-size: 20px; padding: 5px;" class="row"> 
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 3 </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 3 </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4"> - Option 3 </div>
+                <div class="row">
+                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> 
+                        <q><i>Lorem ipsum dolor sit amet sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus. Eros in cursus. Ut enim ad minim veniam.</i></q> - Some Random Person on The Street
+                    </div>
+                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> 
+                        <q><i>Massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim convallis aenean et tortor at risus. Eros in cursus turpis massa tincidunt dui ut ornare.</i></q> - Росен Атанасов
+                    </div>
+                    <div style="font-size: 25px;" class="col-xl-4 col-lg-4 col-md-4"> 
+                        <q><i>Massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim convallis aenean et tortor at risus. Eros in cursus. Ut enim ad minim veniam. Turpis massa tincidunt dui ut ornare.</i></q> - Our Manager
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <div id="foot">
+            <footer style="background-color: rgb(32, 31, 31);">
+                <div class="container-fluid">
+                    <div style="color:white; padding: 20px;" class="row"> 
+                        <div class="col-xl-3 col-lg-3 col-md-3"><span class="text-warning">C</span>ontact Us:</div>
+                        <div class="col-xl-3 col-lg-3 col-md-3"><span class="text-warning">B</span>y Phone: <br> 
+                                                                <span class="text-warning">+</span>359 88 2434155
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3"><span class="text-warning">B</span>y Email: <br> 
+                                                                <span class="text-warning">i</span>nsidedesign@gmail.com
+                        </div>
+                    </div>
+                    <div style="color:white; padding: 20px;" class="row"> 
+                        <div class="col-xl-3 col-lg-3 col-md-3"><span class="text-warning">S</span>ervices:</div>
+                        <div class="col-xl-3 col-lg-3 col-md-3"><a href="#"><span class="text-warning">R</span>oom Design</a></div>
+                        <div class="col-xl-3 col-lg-3 col-md-3"><a href="#"><span class="text-warning">O</span>ffice Design</a></div>
+                        <div class="col-xl-3 col-lg-3 col-md-3"><a href="#"><span class="text-warning">P</span>roduct Design</a></div>
+                    </div>
+                    <div style="color:white; padding: 20px;" class="row"> 
+                        <div class="col-xl-3 col-lg-3 col-md-3"><span class="text-warning">V</span>isit our store:</div>
+                    </div>
+                    <div style="color:white; padding: 20px;" class="row"> 
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%B6%D0%BA%20%D0%9C%D0%BB%D0%B0%D0%B4%D0%BE%D1%81%D1%82-2%20%D0%B1%D0%BB.262%201799%20%D0%A1%D0%BE%D1%84%D0%B8%D1%8F,%20%D0%9C%D0%BB%D0%B0%D0%B4%D0%BE%D1%81%D1%82&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
         <div class="modal fade" id="oneImage"> 
             <div class="modal-dialog"> 
               <div class="modal-content"> 
                 <div class="modal-body">
-                    <img class="img-fluid" src="one.jpg" style="width: 465px; height: 600px;">
+                    <img class="img-fluid" src="images/one.jpg" style="width: 465px; height: 600px;">
                 </div>
                 <div class="modal-footer"> 
                     <a href="#" onclick="closeModalOne()"> Close </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="twoImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="images/two.jpg" style="width: 465px; height: 600px;">
+                </div>
+                <div class="modal-footer"> 
+                    <a href="#" onclick="closeModalTwo()"> Close </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="threeImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="images/three.jpg" style="width: 465px; height: 600px;">
+                </div>
+                <div class="modal-footer"> 
+                    <a href="#" onclick="closeModalThree()"> Close </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fourImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="images/four.jpg" style="width: 465px; height: 600px;">
+                </div>
+                <div class="modal-footer"> 
+                    <a href="#" onclick="closeModalFour()"> Close </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fiveImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="images/five.jpg" style="width: 465px; height: 600px;">
+                </div>
+                <div class="modal-footer"> 
+                    <a href="#" onclick="closeModalFive()"> Close </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sixImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="images/six.jpg" style="width: 465px; height: 600px;">
+                </div>
+                <div class="modal-footer"> 
+                    <a href="#" onclick="closeModalSix()"> Close </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sevenImage"> 
+            <div class="modal-dialog"> 
+              <div class="modal-content"> 
+                <div class="modal-body">
+                    <img class="img-fluid" src="images/seven.jpg" style="width: 465px; height: 600px;">
+                </div>
+                <div class="modal-footer"> 
+                    <a href="#" onclick="closeModalSeven()"> Close </a>
                 </div>
               </div>
             </div>
