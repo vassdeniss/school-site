@@ -90,25 +90,25 @@ body {
     animation-name: slideIn;
 }
 
-a:link {
+.linkService:link {
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
   
-a:visited {
+.linkService:visited {
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
   
-a:hover {
+.linkService:hover {
     color: #C89600;
     background-color: transparent;
     text-decoration: underline;
 }
   
-a:active {
+.linkService:active {
     color: white;
     background-color: transparent;
     text-decoration: underline;
